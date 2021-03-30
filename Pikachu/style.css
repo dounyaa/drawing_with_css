@@ -1,0 +1,142 @@
+body 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(226, 212, 24);
+}
+.container 
+{
+  position: absolute;
+  background: rgb(226, 212, 24);
+  width: 400px;
+  height: 400px;
+}
+.eyes:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 100px;
+  height: 100px;
+  background: black;
+  border: 1px solid #111;
+  border-radius: 50%;
+}
+.eyes:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 100px;
+  height: 100px;
+  background: black;
+  border: 1px solid #111;
+  border-radius: 50%;
+}
+.eyes:before {
+  top: -170px;
+  left: -230px;
+}
+
+.eyes:after {
+  top: -200px;
+  left: 150px;
+}
+.pupils:before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  width: 120px;
+  height: 120px;
+  background: rgb(226, 212, 24);
+  border: 1px solid rgb(226, 212, 24);
+  border-radius: 50%;
+}
+.pupils:after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.pupils:before {
+  top: -155px;
+  left: -238px;
+}
+
+.pupils:after {
+  top: -180px;
+  left: 160px;
+}
+.nose {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  background: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 40%;
+}
+.nose {
+  top: -35px;
+  left: 1px;
+}
+.cheek:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 115px;
+  height: 100px;
+  background: rgb(207, 110, 54);
+  border: 1px solid rgb(207, 110, 54);
+  border-radius: 50%;
+}
+.cheek:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 115px;
+  height: 100px;
+  background: rgb(207, 110, 54);
+  border: 1px solid rgb(207, 110, 54);
+  border-radius: 50%;
+}
+.cheek:before {
+  top: -34px;
+  left: -320px;
+}
+
+.cheek:after {
+  top: -34px;
+  left: 230px;
+}
+.mouth:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 280px;
+  height: 50px;
+  background: rgb(226, 212, 24);
+  border: 1px solid rgb(226, 212, 24) 111;
+  border-radius: 50%;
+}
+.mouth:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 210px;
+  height: 50px;
+  background: black;
+  border: 1px solid #111;
+  border-radius: 50%;
+}
+.mouth:before {
+  top: 30px;
+  left: -80px;
+}
+
+.mouth:after {
+  top: 22px;
+  left: -100px;
+}
