@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="container">
+        <div id="load"></div>
+        <div class="eyes"></div>
+        <div class="mouth">
+          <div id="mouth_painter" class="sad"></div>
+        </div>
+        <div class="head"></div>
+      </div>
+
+      <div class="button_container">
+        <button class="button_drean" onclick="drean()">DREAN</button>
+        <button class="button_charge" onclick="charge()">CHARGE</button>
+      </div>
+    </div>
+
+    <script>
+      var load = document.getElementById("load");
+      var mouthPainter = document.getElementById("mouth_painter");
+
+      function charge() {
+        load.classList.add("full");
+        mouthPainter.classList.add("happy");
+      }
+
+      function drean() {
+        load.classList.remove("full");
+        mouthPainter.classList.remove("happy").add("sad");
+      }
+    </script>
+  </body>
+</html>

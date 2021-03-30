@@ -1,0 +1,131 @@
+body {
+  background: rgb(91, 174, 195);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.container {
+  background: rgb(91, 174, 195);
+  width: 300px;
+  height: 90px;
+  border: 7px solid #111;
+  border-radius: 7%;
+}
+
+.eyes {
+  position: relative;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.eyes:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: black;
+  border: 1px solid #111;
+  border-radius: 50%;
+  z-index: 1;
+  margin-right: 40px;
+}
+
+.eyes:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: black;
+  border: 1px solid #111;
+  border-radius: 50%;
+  margin-left: 40px;
+}
+
+.mouth {
+  position: relative;
+  content: "";
+  width: 150px;
+  height: 20px;
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  margin: auto;
+  top: 30px;
+}
+
+.mouth #mouth_painter {
+  content: "";
+  width: 160px;
+  height: 20px;
+  border-radius: 50%;
+  top: 5px;
+  position: relative;
+}
+
+.mouth #mouth_painter.sad {
+  top: 5px;
+  background: rgb(91, 174, 195);
+  transition: 1s;
+}
+
+.mouth #mouth_painter.happy {
+  top: -5px;
+  background: rgb(247, 224, 18);
+  transition: 1s;
+}
+
+.head {
+  background: rgb(91, 174, 195);
+  width: 10px;
+  height: 40px;
+  border: 5px solid #111;
+  border-radius: 20%;
+  float: right;
+  position: relative;
+  left: 20px;
+  bottom: 20px;
+}
+
+#load {
+  width: 0px;
+  height: 76px;
+  border: 7px solid rgb(247, 224, 18);
+  background: rgb(247, 224, 18);
+  position: absolute;
+  transition: 1s;
+}
+
+#load.full {
+  width: 287px;
+  transition: 1s;
+}
+
+.button_container {
+  margin-top: 60px;
+}
+
+.button_drean {
+  content: "DREAN";
+  background: rgb(247, 224, 18);
+  width: 170px;
+  height: 50px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+.button_charge {
+  content: "CHARGE";
+  background: rgb(247, 224, 18);
+  width: 170px;
+  height: 50px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-left: 40px;
+}
